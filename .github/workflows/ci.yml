@@ -1,6 +1,7 @@
 name: cities-skylines-2-extract-anywhere
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
 
