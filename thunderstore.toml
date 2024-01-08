@@ -4,7 +4,7 @@ schemaVersion = "0.0.1"
 [package]
 namespace = "Pixelnaut"
 name = "ExtractAnywhere"
-versionNumber = "1.0.0"
+versionNumber = "1.0.1"
 description = "Allows resource extraction to function without the need for natural resources. Also allows changing the maximum size of resource extractors' areas."
 websiteUrl = "https://github.com/T3nak/cities-skylines-2-extract-anywhere"
 containsNsfwContent = false
