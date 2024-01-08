@@ -7,6 +7,7 @@ using Game.Settings;
 using Game.UI.Menu;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace ExtractAnywhere.Options
 {
@@ -16,7 +17,6 @@ namespace ExtractAnywhere.Options
         public ExtractAnywhereOptions(IMod mod) : base(mod)
         {
             SetDefaults();
-            GenerateVersion();
         }
 
         [SettingsUIHidden]
@@ -25,8 +25,8 @@ namespace ExtractAnywhere.Options
         [SettingsUIHidden]
         public ExtractorRadiusOption ExtractionRadius { get; set; } = new();
 
-        [SettingsUIDeveloper]
-        public virtual int Version { get; private set; }
+        [SettingsUIHidden]
+        public virtual int Version { get; set; }
 
         private void GetPageSection(AutomaticSettings.SettingPageData pageData, MapFeature feature)
         {
@@ -168,6 +168,8 @@ namespace ExtractAnywhere.Options
 
         public override void SetDefaults()
         {
+            Version = 0;
+
             CanExtractAnywhere.SetDefaults();
             CanExtractAnywhere.ValueChanged -= CanExtractAnywhereChanged;
             CanExtractAnywhere.ValueChanged += CanExtractAnywhereChanged;

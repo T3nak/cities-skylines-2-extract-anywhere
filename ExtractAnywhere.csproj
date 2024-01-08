@@ -5,7 +5,7 @@
 		<AssemblyName>ExtractAnywhere</AssemblyName>
 		<RootNamespace>ExtractAnywhere</RootNamespace>
 		<Description>A mod for Cities: Skylines II that allows resource extraction to function fully on any type of land.</Description>
-		<Version>1.0.2</Version>
+		<Version>1.0.3</Version>
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<LangVersion>latest</LangVersion>
 		<RestoreAdditionalProjectSources>
