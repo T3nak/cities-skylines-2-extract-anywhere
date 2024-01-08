@@ -1,5 +1,7 @@
 # Cities: Skylines II - Extract Anywhere
 
+https://thunderstore.io/c/cities-skylines-ii/p/Pixelnaut/ExtractAnywhere
+
 Extract Anywhere is a mod for Cities: Skylines II with the primary purpose of allowing resource extraction to function without the need for natural resources.
 
 This repository template allows you to get started with Cities: Skylines 2 modding easily, all the way to building your mod on commit with GitHub Actions and publishing your mod automatically on Thunderstore.
@@ -8,6 +10,7 @@ This repository template allows you to get started with Cities: Skylines 2 moddi
 - [Features](#features)
 - [Roadmap](#roadmap)
 - [Credits](#credits)
+- [Changelog](https://github.com/T3nak/cities-skylines-2-extract-anywhere/blob/main/CHANGELOG.md)
 
 # Requirements
 
