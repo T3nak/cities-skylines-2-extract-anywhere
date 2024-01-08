@@ -1,4 +1,6 @@
-# Cities: Skylines 2 - C# Mod template
+# Cities: Skylines II - Extract Anywhere
+
+Extract Anywhere is a mod for Cities: Skylines II with the primary purpose of allowing resource extraction to function without the need for natural resources.
 
 This repository template allows you to get started with Cities: Skylines 2 modding easily, all the way to building your mod on commit with GitHub Actions and publishing your mod automatically on Thunderstore.
 
@@ -14,77 +16,30 @@ This repository template allows you to get started with Cities: Skylines 2 moddi
 
 # Requirements
 
-- [Cities: Skylines 2](https://store.steampowered.com/app/949230/Cities_Skylines_II/) (duh)
-- [BepInEx 5.4.22](https://github.com/BepInEx/BepInEx/releases) or later
-- (Optional) [dotnet-script](https://github.com/dotnet-script/dotnet-script) (for `rename.csx` helper script)
-    - Installation `dotnet tool install -g dotnet-script`
+- Cities: Skylines II
+- BepInEx 5
 
-# Usage
+# Features
 
-- Create a new repository based on this one
-- Clone your new repository to your computer
-- Uncomment and update the `Cities2_Location` variable in `MyCoolMod.csproj`
-- Run `make build`
+## Extract anywhere
 
-After running the last command, the mod should be automatically copied to your game directory,
-so launching the game should include running the mod you just started :)
+The primary goal of this mod is to allow resource extractors to function fully without requiring placement atop natural resource deposits. This means that, as an example, oil drills can be placed anywhere on the map and will still produce oil for your city.
 
-# Renaming your project
+This setting can be toggled on and off for each type of resource extractor from the Extract Anywhere options menu, accessible from the main game options screen.
 
-You can leverage the helper script in `scripts/rename.csx` in order to replace "MyCoolMod" with whatever you want to name your project. Usage:
+## Extraction radius
 
-```
-$ dotnet script scripts\rename.csx "MyCoolMod" "AnotherModIMade"
-```
+Allows setting the maximum area size for extraction, up to as large as 10 times, and as small as 0.1 times, the original.
 
-# Set license details
+This setting can be changed for each type of natural resource deposit (i.e. fertile land, forest, oil, and ore) from the Extract Anywhere options menu, accessible from the main game options screen.
 
-You'll need to update `LICENSE` with the correct details for `<Year>` and `<Author>`, and change "MyCoolMod" to your mod name if you haven't already.
+# Roadmap
 
-# Incrementing version number
-
-- Update `.csproj` file with new version number
-- Update `thunderstore.toml` file with new version number
-- Update `CHANGELOG` to describe the changes you've made between this and previous version
-- Commit version bump
-- Do a git tag with the new version number
-    - `git tag -a v0.2.0 -m v0.2.0`
-- Push your changes + tags
-    - `git push origin master --tags`
-
-# CI / GitHub Actions - Setup
-
-In order to get the CI/GitHub Actions workflow to work, you have to do a couple of things.
-
-- Create a new private repository with all the game DLLs that you require for building your mod
-- Create a new GitHub Personal Access Token ("PAT") that has only READ access to the created private repository
-- Create a new secret variable in GitHub Actions called `GH_PAT` that has your PAT with read access to the private repository
-
-Now the CI job should work as expected :)
-
-# Regarding BepInEx version 5 (Stable) VS 6 (Alpha/Unstable/Nightly)
-
-Currently, this mod template defaults to building against BepInEx version 6 (unstable pre-release). If you'd like to instead use Stable BepInEx version 5, you can run the build like this:
-
-```
-$ make build BEPINEX_VERSION=5
-```
-
-In order to run code only for one BepInEx version, you can do something like this:
-
-```
-#if BEPINEX_V6
-    using BepInEx.Unity.Mono;
-#endif
-```
-
-That would only run `using BepInEx.Unity.Mono` when you're building the project for BepInEx 6. Add in a `else` if you want to do something different when it's version 5.
+- [ ] Update the tooltip when drawing a resource extraction area to calculate properly when the resource is not atop its relevant natural resource deposit.
+- [ ] Translation support.
 
 # Credits
 
-- Thanks to Cities Skylines 2 Unofficial Modding Discord
-- Particular thanks to [@StudioLE](https://github.com/StudioLE) who helped with feedback and improving .csproj setup
-
-# Community
-
-Looking to discuss Cities: Skylines 2 Unofficial modding together with other modders? You're welcome to join our "Cities 2 Modding" Discord, which you can find here: https://discord.gg/vd7HXnpPJf
+- Thanks to the many modders in the Cities: Skylines II community - your mods as references were essential to this mod's existence.
+- The Cities: Skylines II modding Discord server.
+- [Captain of Coit's mod template](https://github.com/Captain-Of-Coit/cities-skylines-2-mod-template)

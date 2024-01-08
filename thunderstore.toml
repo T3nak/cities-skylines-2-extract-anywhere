@@ -2,16 +2,15 @@
 schemaVersion = "0.0.1"
 
 [package]
-namespace = "CaptainOfCoit"
-name = "MyCoolMod"
-versionNumber = "0.1.0"
-description = "Example mod description"
-websiteUrl = "https://thunderstore.io"
+namespace = "Tenak"
+name = "ExtractAnywhere"
+versionNumber = "1.0.0"
+description = "Allows resource extraction to function without the need for natural resources. Also allows changing the maximum size of resource extractors' areas."
+websiteUrl = "https://github.com/T3nak/cities-skylines-2-extract-anywhere"
 containsNsfwContent = false
 
 [package.dependencies]
 # BepInEx-BepInExPack = "5.4.2100"
-# CaptainOfCoit-HookUI = "0.3.0"
 
 [build]
 icon = "./icon.png"
