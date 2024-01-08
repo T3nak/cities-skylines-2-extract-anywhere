@@ -2,7 +2,7 @@
 schemaVersion = "0.0.1"
 
 [package]
-namespace = "Tenak"
+namespace = "Pixelnaut"
 name = "ExtractAnywhere"
 versionNumber = "1.0.0"
 description = "Allows resource extraction to function without the need for natural resources. Also allows changing the maximum size of resource extractors' areas."
