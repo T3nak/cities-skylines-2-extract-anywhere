@@ -5,14 +5,9 @@ Extract Anywhere is a mod for Cities: Skylines II with the primary purpose of al
 This repository template allows you to get started with Cities: Skylines 2 modding easily, all the way to building your mod on commit with GitHub Actions and publishing your mod automatically on Thunderstore.
 
 - [Requirements](#requirements)
-- [Usage](#usage)
-- [Renaming your project](#renaming-your-project)
-- [Set license details](#set-license-details)
-- [Incrementing version number](#incrementing-version-number)
-- [CI / GitHub Actions - Setup](#ci-github-actions-setup)
-- [Regarding BepInEx version 5 (Stable) VS 6 (Alpha/Unstable/Nightly)](#regarding-bepinex-version-5-stable-vs-6-alphaunstablenightly)
+- [Features](#features)
+- [Roadmap](#roadmap)
 - [Credits](#credits)
-- [Community](#community)
 
 # Requirements
 
